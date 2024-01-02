@@ -48,6 +48,8 @@ function App() {
     setResult(0), setInputLeft(""), setInputRight("");
   };
 
+  // Funcionando
+
   return (
     <div id="container">
       <input
