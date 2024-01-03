@@ -1,16 +1,15 @@
-
 import "./App.css";
 
 function App() {
-
   const handleinputLeft = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const form = event.target;
+    console.log
     const formData = new FormData(form);
+
     // Iterar sobre los datos del formulario
     formData.forEach((value, name) => {
-      console.log(`${name}: ${value}`);
-
+      console.log(`${name}:${value}`);
     });
   };
   /* const add = () => {
@@ -33,20 +32,13 @@ function App() {
 
   return (
     <div id="container">
-      <form onSubmit={(e) => { handleinputLeft(e) }}>
+      <form onSubmit={handleinputLeft}>
+        <input name="left" type="number" />
 
-        <input
-          name="left"
-          type="number"
-        />
-
-        <input
+        {/* <input
           name="right"
           type="number"
-
-
-        />
-
+        /> */}
       </form>
       {/* <div id="buttons">
         <div id="" addRest>
